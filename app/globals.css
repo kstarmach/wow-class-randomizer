@@ -18,12 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 
@@ -39,4 +36,42 @@ main h1 {
   padding: 0 2.5rem;
   box-sizing: border-box;
   line-height: 1;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+.section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-scale {
+  background-repeat: no-repeat;
+  transition: all .7s;
+  cursor: pointer;
+  background-position: left bottom;
+  background-size: cover;
+}
+
+.hover-scale:hover {
+  transform: scale(1.25);
+  transition: all 2.5s ease-in-out;
+  background-position: center;
+  background-size: cover;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.grayscale:hover {
+  filter: none;
 }

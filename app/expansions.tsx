@@ -3,40 +3,42 @@ import Link from 'next/link'
 
 
 
-const Expansion = ({ logo }: { logo: string }) => {
+
+const Expansion = ({ logo, background }: { logo: string, background: string }) => {
 
     return (
-        <Link
-            href="/classic  "
-            className="group rounded-lg border border-transparent px-5 py-4"
-            rel="noopener noreferrer"
-        >
 
-            <Image
-                className="relative hover:scale-125 transition-transform transform duration-500"
-                src={`/${logo}`}
-                alt="Next.js Logo"
-                width={300}
-                height={150}
-                priority
-            />
-        </Link >
+        <div className="section grayscale flex justify-center items-center hover-scale " style={{ backgroundImage: `url('/${background}')` }}>
+            <div className="text-white text-center p-8">
+                <Image
+                    className="relative "
+                    src={`/${logo}`}
+                    alt="Next.js Logo"
+                    width={500}
+                    height={300}
+                    priority
+                />
+            </div>
+        </div>
     )
 }
 
 const Expansions = () => {
     return (
 
+        <div className="grid grid-cols-1 lg:grid-cols-3 h-screen ">
 
-        <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-3 lg:text-left">
             <Expansion
                 logo="wowclassichardcore.png"
-            />
+                background="classic.jpg"
+                />
             <Expansion
                 logo="wotlk.webp"
-            />
+                background="wrath.webp"
+                />
             <Expansion
                 logo="World-of-Warcraft-Logo.png"
+                background="dragonflight.jpg"
             />
         </div>
 
