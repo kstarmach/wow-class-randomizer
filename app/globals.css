@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,7 +26,7 @@ body {
 
 
 main h1 {
-  font-family: 'WoWFont', Arial, sans-serif;
+
   font-size: min(16vw, 4rem);
   font-weight: 600;
   margin: 0;
@@ -56,14 +57,14 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   transition: all .7s;
   cursor: pointer;
-  background-position: left bottom;
+  background-position: bottom left;
   background-size: cover;
 }
 
 .hover-scale:hover {
   transform: scale(1.25);
   transition: all 2.5s ease-in-out;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 

@@ -1,8 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
-
-
-
 
 const Expansion = ({ logo, background }: { logo: string, background: string }) => {
 
@@ -26,16 +22,16 @@ const Expansion = ({ logo, background }: { logo: string, background: string }) =
 const Expansions = () => {
     return (
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 h-screen ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 h-screen relative ">
 
             <Expansion
                 logo="wowclassichardcore.png"
                 background="classic.jpg"
-                />
+            />
             <Expansion
                 logo="wotlk.webp"
-                background="wrath.webp"
-                />
+                background="wrath.jpg"
+            />
             <Expansion
                 logo="World-of-Warcraft-Logo.png"
                 background="dragonflight.jpg"
