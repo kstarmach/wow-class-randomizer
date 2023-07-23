@@ -26,7 +26,6 @@ body {
 
 
 main h1 {
-
   font-size: min(16vw, 4rem);
   font-weight: 600;
   margin: 0;
@@ -57,16 +56,16 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   transition: all .7s;
   cursor: pointer;
-  background-position: bottom left;
+  background-position: center;
   background-size: cover;
 }
 
-.hover-scale:hover {
-  transform: scale(1.25);
+/* .hover-scale:hover {
+  transform: scale(1.2);
   transition: all 2.5s ease-in-out;
   background-position: top;
   background-size: cover;
-}
+} */
 
 .grayscale {
   filter: grayscale(100%);
@@ -75,4 +74,22 @@ body::-webkit-scrollbar {
 
 .grayscale:hover {
   filter: none;
+}
+
+.transition-expand {
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
