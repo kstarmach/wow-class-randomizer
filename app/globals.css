@@ -3,55 +3,6 @@
 @tailwind utilities;
 
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-}
-
-
-main h1 {
-  font-size: min(16vw, 4rem);
-  font-weight: 600;
-  margin: 0;
-  text-align: center;
-  top: 10vh;
-  left: 0;
-  width: 100%;
-  padding: 0 2.5rem;
-  box-sizing: border-box;
-  line-height: 1;
-}
-
-html {
-  scrollbar-width: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-
-.section {
-  position: relative;
-  overflow: hidden;
-}
-
 .hover-scale {
   background-repeat: no-repeat;
   transition: all .7s;
@@ -60,13 +11,6 @@ body::-webkit-scrollbar {
   background-size: cover;
 }
 
-/* .hover-scale:hover {
-  transform: scale(1.2);
-  transition: all 2.5s ease-in-out;
-  background-position: top;
-  background-size: cover;
-} */
-
 .grayscale {
   filter: grayscale(100%);
   transition: filter 0.5s ease-in-out;
@@ -74,22 +18,4 @@ body::-webkit-scrollbar {
 
 .grayscale:hover {
   filter: none;
-}
-
-.transition-expand {
-  transition: width 0.5s ease, height 0.5s ease;
-}
-
-.fullscreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
 }
