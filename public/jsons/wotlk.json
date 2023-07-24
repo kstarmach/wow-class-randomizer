@@ -1,0 +1,117 @@
+{
+    "races": [
+        {
+            "race": "Human",
+            "classes": [
+                "Warrior",
+                "Paladin",
+                "Rogue",
+                "Priest",
+                "Mage",
+                "Warlock"
+            ],
+            "faction": "Alliance"
+        },
+        {
+            "race": "Dwarf",
+            "classes": [
+                "Warrior",
+                "Paladin",
+                "Hunter",
+                "Rogue",
+                "Priest"
+            ],
+            "faction": "Alliance"
+        },
+        {
+            "race": "Night Elf",
+            "classes": [
+                "Warrior",
+                "Hunter",
+                "Rogue",
+                "Priest",
+                "Druid"
+            ],
+            "faction": "Alliance"
+        },
+        {
+            "race": "Gnome",
+            "classes": [
+                "Warrior",
+                "Rogue",
+                "Mage",
+                "Warlock"
+            ],
+            "faction": "Alliance"
+        },
+        {
+            "race": "Draenei",
+            "classes": [
+                "Warrior",
+                "Paladin",
+                "Hunter",
+                "Priest",
+                "Shaman"
+            ],
+            "faction": "Alliance"
+        },
+        {
+            "race": "Orc",
+            "classes": [
+                "Warrior",
+                "Hunter",
+                "Rogue",
+                "Shaman",
+                "Warlock"
+            ],
+            "faction": "Horde"
+        },
+        {
+            "race": "Undead (Forsaken)",
+            "classes": [
+                "Warrior",
+                "Rogue",
+                "Priest",
+                "Mage",
+                "Warlock"
+            ],
+            "faction": "Horde"
+        },
+        {
+            "race": "Tauren",
+            "classes": [
+                "Warrior",
+                "Paladin",
+                "Hunter",
+                "Priest",
+                "Druid",
+                "Shaman"
+            ],
+            "faction": "Horde"
+        },
+        {
+            "race": "Troll",
+            "classes": [
+                "Warrior",
+                "Hunter",
+                "Rogue",
+                "Priest",
+                "Mage",
+                "Shaman"
+            ],
+            "faction": "Horde"
+        },
+        {
+            "race": "Blood Elf",
+            "classes": [
+                "Paladin",
+                "Hunter",
+                "Rogue",
+                "Priest",
+                "Mage",
+                "Warlock"
+            ],
+            "faction": "Horde"
+        }
+    ]
+}
